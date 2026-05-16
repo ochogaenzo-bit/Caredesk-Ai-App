@@ -63,3 +63,39 @@ https://i.postimg.cc/g0Z7f6wF/Screenshot-2026-05-16-010653.png
 
 For deployment, use a host that can run Node.js, such as Render, Railway, Fly.io, or a small VPS. GitHub Pages only hosts static files, so it cannot run `server.js`.
 
+For Streamlit Community Cloud, set the app entrypoint to `app.py`.
+
+## Local installation guide
+
+To run this project on your own computer, you need:
+
+- Git, to download the repository.
+- Python 3.10 or newer, to run the Streamlit app.
+- Node.js 18 or newer, if you want to run the Node version.
+- A Google AI Studio API key for Gemini.
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ochogaenzo-bit/Caredesk-Ai-App.git
+cd Caredesk-Ai-App
+```
+
+Run the Streamlit version:
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+Run the Node version:
+
+```bash
+npm start
+```
+
+After starting the Node version, open this in your browser:
+
+```text
+http://localhost:3000
+```
