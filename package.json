@@ -1,0 +1,9 @@
+{
+  "name": "caredesk-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Compact customer-service AI chatbot with a local Node server.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

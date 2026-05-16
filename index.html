@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CareDesk AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <header class="header">
+          <div class="brand-mark">C</div>
+          <div>
+            <h1>CareDesk AI</h1>
+            <p>Customer support chatbot</p>
+          </div>
+        </header>
+
+        <form id="keyForm" class="key-form">
+          <label for="apiKey">Google AI API key</label>
+          <div class="key-row">
+            <input id="apiKey" type="password" autocomplete="off" placeholder="AIza..." required />
+            <button type="submit">Use Key</button>
+          </div>
+          <p id="keyStatus">Your key stays in this browser and is sent only to the local app server.</p>
+        </form>
+
+        <section id="chat" class="chat" aria-live="polite">
+          <article class="message assistant">
+            <div class="avatar">AI</div>
+            <p>Hi, I am ready to help with customer support. Add your API key, then paste a customer message.</p>
+          </article>
+        </section>
+
+        <form id="chatForm" class="composer">
+          <textarea
+            id="messageInput"
+            rows="3"
+            placeholder="Paste the customer's issue here..."
+            required
+          ></textarea>
+          <div class="composer-actions">
+            <select id="model" aria-label="Model">
+              <option value="gemini-2.5-flash" selected>gemini-2.5-flash</option>
+              <option value="gemini-2.5-pro">gemini-2.5-pro</option>
+              <option value="gemini-2.0-flash">gemini-2.0-flash</option>
+            </select>
+            <button id="clearChat" class="secondary" type="button">Clear</button>
+            <button id="sendButton" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
