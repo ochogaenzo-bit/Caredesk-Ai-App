@@ -2,31 +2,10 @@
 
 A compact customer-service AI chatbot powered by Google Gemini, with the support skills and agent rules encoded into the app.
 
-## Run locally
-
-### Node version
-
-```bash
-node server.js
-```
-
-Then open:
-
-```text
-http://localhost:3000
-```
-
-You can also run:
-
-```bash
-npm start
-```
-
 ### Streamlit version
 
-```bash
-pip install -r requirements.txt
-streamlit run app.py
+```
+https://caredesk-ai-app-9agdf3qm2dpfvgtkxtjqwd.streamlit.app/
 ```
 
 ## Notes
@@ -38,4 +17,3 @@ streamlit run app.py
 
 For deployment, use a host that can run Node.js, such as Render, Railway, Fly.io, or a small VPS. GitHub Pages only hosts static files, so it cannot run `server.js`.
 
-For Streamlit Community Cloud, set the app entrypoint to `app.py`.
